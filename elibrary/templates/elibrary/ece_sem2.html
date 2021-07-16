@@ -1,0 +1,217 @@
+{% extends "elibrary/base.html" %}
+{% block content %}
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8">
+    	<h3 style="text-align: center">
+    		B.E. (ELECTRONICS & COMMUNICATION ENGINEERING)
+    	</h3>
+    	<h5 style="text-align: left">
+    		Semester-II
+    	</h5>
+    	<div class="table-responsive-md">
+			<table class="table table-bordered table-condensed" border="3" style="align-content: left;">
+				<thead>
+					<tr class="table-active">
+						<th rowspan="3">S.No</th>
+						<th rowspan="3">Course Code</th>
+						<th rowspan="3">Title of the Course</th>
+						<th colspan="3">Scheme of Instruction</th>
+						<th colspan="3">Scheme of Examination</th>
+						<th rowspan="3">Credits</th>
+					</tr>
+					<tr class="table-active">
+						<th colspan="3">Hours per week</th>
+						<th rowspan="2">Duration of SEE in Hours</th>
+						<th colspan="2">Maximum Marks</th>
+					</tr>
+					<tr class="table-active">
+						<th>L</th>
+						<th>T</th>
+						<th>P/D</th>
+						<th>CIE</th>
+						<th>SEE</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="10" style="text-align: center">THEORY</td>
+					</tr>
+					<tr class="table-success">
+						<td>1</td>
+						<td>20MTC06</td>
+						<td>Vector Calculus and 
+                            Differential Equations</td>
+						<td>3</td>
+						<td>1</td>
+						<td>-</td>
+						<td>3</td>
+						<td>40</td>
+						<td>60</td>
+						<td>4</td>
+					</tr>
+					<tr class="table-danger">
+						<td>2</td>
+						<td>20EGC01</td>
+						<td>English</td>
+						<td>2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>3</td>
+						<td>40</td>
+						<td>60</td>
+						<td>2</td>
+					</tr>
+					<tr class="table-info">
+						<td>3</td>
+						<td>20PYC06</td>
+						<td>Electromagnetic Theory and 
+                            Quantum Mechanic</td>
+						<td>3</td>
+						<td>-</td>
+						<td>-</td>
+						<td>3</td>
+						<td>40</td>
+						<td>60</td>
+						<td>3</td>
+					</tr>
+					<tr class="table-warning">
+						<td>4</td>
+						<td>20EEC01</td>
+						<td>Basic Electrical Engineering</td>
+						<td>3</td>
+						<td>-</td>
+						<td>-</td>
+						<td>3</td>
+						<td>40</td>
+						<td>60</td>
+						<td>3</td>
+					</tr>
+					<tr>
+						<td colspan="10" style="text-align: center">PRACTICALS</td>
+					</tr>
+					<tr class="table-active">
+						<td>5</td>
+						<td>20EGC02</td>
+						<td>English lab</td>
+						<td>-</td>
+						<td>-</td>
+						<td>2</td>
+						<td>3</td>
+						<td>50</td>
+						<td>50</td>
+						<td>1</td>
+					</tr>
+					<tr class="table-success">
+						<td>6</td>
+						<td>20PYC09</td>
+						<td>Electromagnetic Theory and 
+                            Quantum Mechanics Lab</td>
+						<td>-</td>
+						<td>-</td>
+						<td>4</td>
+						<td>3</td>
+						<td>50</td>
+						<td>50</td>
+						<td>2</td>
+					</tr>
+					<tr class="table-danger">
+						<td>7</td>
+						<td>20EEC02</td>
+						<td>Basic Electrical
+                            Engineering Lab </td>
+						<td>-</td>
+						<td>-</td>
+						<td>2</td>
+						<td>3</td>
+						<td>50</td>
+						<td>50</td>
+						<td>1</td>
+					</tr>
+					<tr class="table-info">
+						<td>8</td>
+						<td>18EGC02</td>
+						<td>CAD and Drafting </td>
+						<td>-</td>
+						<td>1</td>
+						<td>3</td>
+						<td>3</td>
+						<td>50</td>
+						<td>50</td>
+						<td>2.5</td>
+					</tr>
+					<tr class="table-warning">
+						<td></td>
+						<td></td>
+						<td>TOTAL</td>
+						<td>11</td>
+						<td>02</td>
+						<td>11</td>
+						<td>-</td>
+						<td>410</td>
+						<td>440</td>
+						<td>20</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+        <p><strong>L:Lecture</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>T:Tutorial</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> D:Drawing </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>P:Practical</strong></p>
+        
+        <p><strong>CIE-Continuous Internal Evaluation</strong> &nbsp;&nbsp;&nbsp;<strong> SEE-Semester End Examination</strong> </p>
+    </div>
+    <div class="col-md-4">
+    	<h2> Semester-II Subjects </h2>
+        <div>
+			<br>
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem2' %}"> 
+					<img class="img-fluid" src="/media/IT/sem2/eng.jpg" alt="DLCA" style="width: 500px; height: 230px">
+				</a>
+			</div>		
+			 
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem2' %}">
+					<img class="img-fluid" src="/media/IT/sem3/BEE.jpg" alt="DBMS" style="width: 500px; height:230px">
+				</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem2' %}">
+					<img class="img-fluid" src="/media/ECE/sem2/calculus.jpg" alt="java" style="width: 500px; height:230px">
+				</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem2' %}">
+					<img class="img-fluid" src="/media/ECE/sem2/Quant.jpg" alt="DAA" style="width: 500px; height:230px">
+				</a>
+			</div>
+			
+		</div>		
+	</div>
+
+  </div>
+
+</main>
+
+<footer class="page-footer font-small">
+	<nav class="navbar navbar-expand-md navbar-dark bg-steel">
+  
+	  <div>
+	  	<br>
+	    <p style="color: white">Back to 
+	    <a href="{% url 'library-ece-sem1' %}" style="color: red">Sem1</a>
+	    page</p>
+
+
+	    <p style="color: white">Go to 
+	    	<a href="{% url 'library-ece-sem3' %}" style="color: red">Sem3</a>
+	    page</p>
+	  </div>
+
+	</nav>
+
+</footer>
+
+
+{% endblock content %}

@@ -1,0 +1,71 @@
+{% extends "elibrary/base.html" %}
+{% block content %} 
+<main role="main" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="content-section bg-secondary text-white">
+            <h3>Welcome to <br>CBIT LIBRARY</h3>
+            <p>
+            	CBIT e-Library is an online platform for students to read various subjects in the form of PDF's. <br>It has PDF's of all subjects of all semesters of IT, ECE, CSE, EEE branches.<br><br> All the PDF's are neatly organized and you can view the contents of PDF before opening it!
+            	<br>Give feedback :) Your feedback will really makes us happy!<br><br>All the best Preparing!!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-8">
+        	<h1>CSE DEPARTMENT</h1><br>
+		    <div class="row">
+				<div class="col-md-4">
+					<div class="card bg-dark">
+						<div class="card-body">
+							<a href="{% url 'library-cse-sem1' %}" class="card-link text-white">sem 1</a>
+						</div>
+					</div> 
+					<br>
+					<div class="card bg-dark">
+						<div class="card-body">
+							<a href="{% url 'library-cse-sem2' %}" class="card-link text-white">sem 2</a>
+						</div>
+					</div> 
+					<br>
+					<div class="card bg-dark">
+						<div class="card-body">
+							<a href="{% url 'library-cse-sem3' %}" class="card-link text-white">sem 3</a>
+						</div>
+					</div>
+					<br> 
+					<div class="card bg-dark">
+						<div class="card-body">
+							<a href="{% url 'library-cse-sem4' %}" class="card-link text-white">sem 4</a>
+						</div>
+					</div> 
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-dark">
+						<div class="card-body">
+							<a href="{% url 'library-cse-sem5' %}" class="card-link text-white">sem 5</a>
+						</div>
+					</div> 
+					<br>
+					<div class="card bg-dark">
+						<div class="card-body">
+							<a href="{% url 'library-cse-sem6' %}" class="card-link text-white">sem 6</a>
+						</div>
+					</div> 
+					<br>
+					<div class="card bg-dark">
+						<div class="card-body">
+							<a href="{% url 'library-cse-sem7' %}" class="card-link text-white">sem 7</a>
+						</div>
+					</div>
+					<br> 
+					<div class="card bg-dark">
+						<div class="card-body">
+							<a href="#" class="card-link text-white">sem 8</a>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock content %}

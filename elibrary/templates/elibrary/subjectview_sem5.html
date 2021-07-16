@@ -1,0 +1,118 @@
+{% load static %}
+{% static "m123ed" as baseUrl %}
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        #demo1
+        {
+            font-size: 50px;
+            color: black;
+            text-decoration: none;
+        } 
+        #demo2
+        {
+            font-size: 30px;
+            color: black;  
+            text-decoration: none;
+        }
+        #demo3
+        {
+            font-size: 20px;
+            color: black;  
+            text-decoration: none;
+        }
+        #demo4
+        {
+            font-size: 30px; 
+            color: black; 
+        }
+
+        .container 
+        {
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+        .centered 
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img
+        {
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+<body>
+
+    {% for sub in sem5 %}
+    <div class="container">
+        <img src="/media/home_page/template2.jpeg" alt="template" > 
+        
+        <div class="centered">
+            <p id="demo1"><strong>{{sub.subject_name}}&nbsp; UNIT-1</strong> </p>
+            <p id="demo3">{{sub.content1}}</p>
+            <a id="demo4" href="{{baseUrl}}/{{sub.pdf_link1}}" target="_blank">Unit-1 PDF</a> 
+        </div>
+
+    </div>
+    <br>
+    <div class="container">
+        <img src="/media/home_page/template2.jpeg" alt="template" > 
+        
+        <div class="centered">
+            <p id="demo1"><strong>{{sub.subject_name}}&nbsp; UNIT-2</strong> </p>
+            <p id="demo3">{{sub.content2}}</p>
+            <a id="demo4" href="{{baseUrl}}/{{sub.pdf_link2}}" target="_blank">Unit-2 PDF</a> 
+        </div>
+
+    </div>
+    <br>
+    <div class="container">
+        <img src="/media/home_page/template2.jpeg" alt="template" > 
+        
+        <div class="centered">
+            <p id="demo1"><strong>{{sub.subject_name}}&nbsp; UNIT-3</strong> </p>
+            <p id="demo3">{{sub.content3}}</p>
+            <a id="demo4" href="{{baseUrl}}/{{sub.pdf_link3}}" target="_blank">Unit-3 PDF</a> 
+        </div>
+
+    </div>
+    <br>
+    <div class="container">
+        <img src="/media/home_page/template2.jpeg" alt="template" > 
+        
+        <div class="centered">
+            <p id="demo1"><strong>{{sub.subject_name}}&nbsp; UNIT-4</strong> </p>
+            <p id="demo3">{{sub.content4}}</p>
+            <a id="demo4" href="{{baseUrl}}/{{sub.pdf_link4}}" target="_blank">Unit-4 PDF</a> 
+        </div>
+
+    </div>
+    <br>
+    <div class="container">
+        <img src="/media/home_page/template2.jpeg" alt="template" > 
+        
+        <div class="centered">
+            <p id="demo1"><strong>{{sub.subject_name}}&nbsp; UNIT-5</strong> </p>
+            <p id="demo3">{{sub.content5}}</p>
+            <a id="demo4" href="{{baseUrl}}/{{sub.pdf_link5}}" target="_blank">Unit-5 PDF</a> 
+        </div>
+
+    </div>
+    <br>
+    {% endfor %}
+</body>

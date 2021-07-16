@@ -1,0 +1,209 @@
+{% extends "elibrary/base.html" %}
+{% block content %}
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8">
+    	<h3 style="text-align: center">
+    		B.E. (ELECTRONICS & COMMUNICATION ENGINEERING)
+    	</h3>
+    	<h5 style="text-align: left">
+    		Semester-I
+    	</h5>
+    	<div class="table-responsive-md">
+			<table class="table table-bordered table-condensed" border="3" style="align-content: left;">
+				<thead>
+					<tr class="table-active">
+						<th rowspan="3">S.No</th>
+						<th rowspan="3">Course Code</th>
+						<th rowspan="3">Title of the Course</th>
+						<th colspan="2">Scheme of Instruction</th>
+						<th colspan="3">Scheme of Examination</th>
+						<th rowspan="3">Credits</th>
+					</tr>
+					<tr class="table-active">
+						<th colspan="2">Hours per week</th>
+						<th rowspan="2">Duration of SEE in Hours</th>
+						<th colspan="2">Maximum Marks</th>
+					</tr>
+					<tr class="table-active">
+						<th>L/T</th>
+						<th>P/D</th>
+						<th>CIE</th>
+						<th>SEE</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="9" style="text-align: center">THEORY</td>
+					</tr>
+					<tr class="table-success">
+						<td>1</td>
+						<td>20MTC05</td>
+						<td>Calculus</td>
+						<td>3</td>
+						<td>-</td>
+						<td>3</td>
+						<td>40</td>
+						<td>60</td>
+						<td>4</td>
+					</tr>
+					<tr class="table-danger">
+						<td>2</td>
+						<td>20CYC01</td>
+						<td>Chemistry</td>
+						<td>3</td>
+						<td>-</td>
+						<td>3</td>
+						<td>40</td>
+						<td>60</td>
+						<td>3</td>
+					</tr>
+					<tr class="table-info">
+						<td>3</td>
+						<td>20CEC01</td>
+						<td>Engineering Mechanics-I</td>
+						<td>3</td>
+						<td>-</td>
+						<td>3</td>
+						<td>40</td>
+						<td>60</td>
+						<td>3</td>
+					</tr>
+					<tr class="table-warning">
+						<td>4</td>
+						<td>20CSC01</td>
+						<td>Programming for Problem Solving</td>
+						<td>3</td>
+						<td>-</td>
+						<td>3</td>
+						<td>40</td>
+						<td>60</td>
+						<td>3</td>
+					</tr>
+					
+					<tr>
+						<td colspan="9" style="text-align: center">PRACTICALS</td>
+					</tr>
+					<tr class="table-active">
+						<td>5</td>
+						<td>20CYC02</td>
+						<td>Chemistry Lab</td>
+						<td>-</td>
+						<td>4</td>
+						<td>3</td>
+						<td>50</td>
+						<td>50</td>
+						<td>2</td>
+					</tr>
+					<tr class="table-success">
+						<td>6</td>
+						<td>20CSC02</td>
+						<td>Programming for Problem Solving Lab </td>
+						<td>-</td>
+						<td>4</td>
+						<td>3</td>
+						<td>50</td>
+						<td>50</td>
+						<td>2</td>
+					</tr>
+					<tr class="table-warning">
+						<td>7</td>
+						<td>20MEC02</td>
+						<td>Workshop/ Manufacturing 
+							Practic</td>
+						<td>-</td>
+						<td>5</td>
+						<td>3</td>
+						<td>50</td>
+						<td>50</td>
+						<td>2.5</td>
+					</tr>
+					<tr class="table-active">
+						<td>8</td>
+						<td>20MEC03</td>
+						<td>Engineering Exploration</td>
+						<td>-</td>
+						<td>2</td>
+						<td>2</td>
+						<td>50</td>
+						<td>-</td>
+						<td>1.5</td>
+					</tr>
+					<tr class="table-danger">
+						<td></td>
+						<td></td>
+						<td>TOTAL</td>
+						<td>12</td>
+						<td>1</td>
+						<td>13</td>
+						<td>360</td>
+						<td>390</td>
+						<td>21</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+        <p><strong>L:Lecture</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>T:Tutorial</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> D:Drawing </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>P:Practical</strong></p>
+        
+        <p><strong>CIE-Continuous Internal Evaluation</strong> &nbsp;&nbsp;&nbsp;<strong> SEE-Semester End Examination</strong> </p>
+    </div>
+    <div class="col-md-4">
+    	<h2> Semester-I Subjects </h2>
+        <div>
+			<br>
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem1' %}"> 
+					<img class="img-fluid" src="/media/IT/sem1/CHEM.jpg" alt="DSA" style="width: 500px; height: 250px">
+				</a>
+			</div>		
+			 
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem1' %}">
+					<img class="img-fluid" src="/media/IT/sem1/EGD.jpg" alt="DMA" style="width: 500px; height:250px">
+				</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem1' %}">
+					<img class="img-fluid" src="/media/IT/sem1/PPS.jpg" alt="ECE" style="width: 500px; height:250px">
+				</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem1' %}">
+					<img class="img-fluid" src="/media/IT/sem1/m1.jpg" alt="POM" style="width: 500px; height:250px">
+				</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem1' %}">
+					<img class="img-fluid" src="/media/IT/sem1/EM.jpg" alt="BEE" style="width: 500px; height:250px">
+				</a>
+			</div>
+		</div>		
+	</div>
+
+  </div>
+
+</main>
+
+<footer class="page-footer font-small">
+	<nav class="navbar navbar-expand-md navbar-dark bg-steel">
+  
+	  <div>
+	  	<br>
+	    <p style="color: white">Back to 
+	    <a href="{% url 'library-ece-sems' %}" style="color: red">Sems</a>
+	    page</p>
+
+
+	    <p style="color: white">Go to 
+	    	<a href="{% url 'library-ece-sem2' %}" style="color: red">Sem2</a>
+	    page</p>
+	  </div>
+
+	</nav>
+
+</footer>
+
+{% endblock content %}

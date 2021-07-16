@@ -1,0 +1,231 @@
+{% extends "elibrary/base.html" %}
+{% block content %}
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8">
+    	<h3 style="text-align: center">
+    		B.E. (Information Technology)
+    	</h3>
+    	<h5 style="text-align: left">
+    		Semester-IV
+    	</h5>
+    	<div class="table-responsive-md">
+			<table class="table table-bordered table-condensed" border="3" style="align-content: left;">
+				<thead>
+					<tr class="table-active">
+						<th rowspan="3">S.No</th>
+						<th rowspan="3">Course Code</th>
+						<th rowspan="3">Title of the Course</th>
+						<th colspan="2">Scheme of Instruction</th>
+						<th colspan="3">Scheme of Examination</th>
+						<th rowspan="3">Credits</th>
+					</tr>
+					<tr class="table-active">
+						<th colspan="2">Hours per week</th>
+						<th rowspan="2">Duration of SEE in Hours</th>
+						<th colspan="2">Maximum Marks</th>
+					</tr>
+					<tr class="table-active">
+						<th>L/T</th>
+						<th>P/D</th>
+						<th>CIE</th>
+						<th>SEE</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="9" style="text-align: center">THEORY</td>
+					</tr>
+					<tr class="table-success">
+						<td>1</td>
+						<td>18ITC03</td>
+						<td>Digital Logic and Computer Architecture</td>
+						<td>3</td>
+						<td>-</td>
+						<td>3</td>
+						<td>30</td>
+						<td>70</td>
+						<td>3</td>
+					</tr>
+					<tr class="table-danger">
+						<td>2</td>
+						<td>18ITC09</td>
+						<td>Database Management Systems</td>
+						<td>3</td>
+						<td>-</td>
+						<td>3</td>
+						<td>30</td>
+						<td>70</td>
+						<td>3</td>
+					</tr>
+					<tr class="table-info">
+						<td>3</td>
+						<td>18ITC10</td>
+						<td>Java Programming</td>
+						<td>2</td>
+						<td>-</td>
+						<td>2</td>
+						<td>20</td>
+						<td>50</td>
+						<td>2</td>
+					</tr>
+					<tr class="table-warning">
+						<td>4</td>
+						<td>18ITC11</td>
+						<td>Design and Analysis of Algorithms</td>
+						<td>3</td>
+						<td>-</td>
+						<td>3</td>
+						<td>30</td>
+						<td>70</td>
+						<td>3</td>
+					</tr>
+					<tr class="table-active">
+						<td>5</td>
+						<td>18MTC09</td>
+						<td>Probability and Statistics</td>
+						<td>3/1</td>
+						<td>-</td>
+						<td>3</td>
+						<td>30</td>
+						<td>70</td>
+						<td>4</td>
+					</tr>
+					<tr class="table-success">
+						<td>6</td>
+						<td>18EGM01</td>
+						<td>Indian Constitution</td>
+						<td>2</td>
+						<td>-</td>
+						<td>2</td>
+						<td>-</td>
+						<td>50</td>
+						<td>Non-Credit</td>
+					</tr>
+					<tr>
+						<td colspan="9" style="text-align: center">PRACTICALS</td>
+					</tr>
+					<tr class="table-danger">
+						<td>7</td>
+						<td>18ITC07</td>
+						<td>IT Workshop</td>
+						<td>-</td>
+						<td>2</td>
+						<td>-</td>
+						<td>50</td>
+						<td>-</td>
+						<td>1</td>
+					</tr>
+					<tr class="table-info">
+						<td>8</td>
+						<td>18ITC12</td>
+						<td>Database Management Systems Lab</td>
+						<td>-</td>
+						<td>2</td>
+						<td>2</td>
+						<td>15</td>
+						<td>35</td>
+						<td>1</td>
+					</tr>
+					<tr class="table-warning">
+						<td>9</td>
+						<td>18ITC13</td>
+						<td>Java Programming Lab</td>
+						<td>-</td>
+						<td>2</td>
+						<td>2</td>
+						<td>15</td>
+						<td>35</td>
+						<td>1</td>
+					</tr>
+					<tr class="table-active">
+						<td>10</td>
+						<td>18ITC14</td>
+						<td>Mini Project - II </td>
+						<td>-</td>
+						<td>2</td>
+						<td>-</td>
+						<td>50</td>
+						<td>-</td>
+						<td>1</td>
+					</tr>
+					<tr class="table-success">
+						<td></td>
+						<td></td>
+						<td>TOTAL</td>
+						<td>16/1</td>
+						<td>8</td>
+						<td>-</td>
+						<td>270</td>
+						<td>450</td>
+						<td>19</td>
+					</tr>
+				</tbody>
+			</table>
+        </div>
+        <p><strong>L:Lecture</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>T:Tutorial</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong> D:Drawing </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>P:Practical</strong></p>
+        
+        <p><strong>CIE-Continuous Internal Evaluation</strong> &nbsp;&nbsp;&nbsp;<strong> SEE-Semester End Examination</strong> </p>
+    </div>
+    <div class="col-md-4">
+    	<h2> Semester-IV Subjects </h2>
+        <div>
+			<br>
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem4' %}"> 
+					<img class="img-fluid" src="/media/IT/sem4/DLCA.jpeg" alt="DLCA" style="width: 500px; height: 230px">
+				</a>
+			</div>		
+			 
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem4' %}">
+					<img class="img-fluid" src="/media/IT/sem4/DBMS.jpeg" alt="DBMS" style="width: 500px; height:230px">
+				</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem4' %}">
+					<img class="img-fluid" src="/media/IT/sem4/java.jpeg" alt="java" style="width: 500px; height:230px">
+				</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem4' %}">
+					<img class="img-fluid" src="/media/IT/sem4/DAA.jpeg" alt="DAA" style="width: 500px; height:230px">
+				</a>
+			</div>
+			
+			<div class="d-flex justify-content-center">
+				<a href="{% url 'subjectview_sem4' %}">
+					<img class="img-fluid" src="/media/IT/sem4/ps.jpeg" alt="PS" style="width: 500px; height:230px">
+				</a>
+			</div>
+			<br>
+		</div>		
+	</div>
+
+  </div>
+
+</main>
+
+<footer class="page-footer font-small">
+	<nav class="navbar navbar-expand-md navbar-dark bg-steel">
+  
+	  <div>
+	  	<br>
+	    <p style="color: white">Back to 
+	    <a href="{% url 'library-it-sem3' %}" style="color: red">Sem3</a>
+	    page</p>
+
+
+	    <p style="color: white">Go to 
+	    	<a href="{% url 'library-it-sem5' %}" style="color: red">Sem5 </a>
+	    page</p>
+	  </div>
+
+	</nav>
+
+</footer>
+
+
+{% endblock content %}
